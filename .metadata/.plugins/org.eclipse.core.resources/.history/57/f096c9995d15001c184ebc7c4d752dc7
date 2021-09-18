@@ -1,0 +1,19 @@
+package org.mvn;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class baseTrail extends baseClass {
+public static void main(String[] args) {
+	launchBrowser();
+	launchUrl("https://www.facebook.com/");
+	maximize();
+	WebElement username = driver.findElement(By.id("email"));
+	fill(username, "hello facebook");
+	WebElement pass = driver.findElement(By.id("pass"));
+	fill(pass, "facebook");
+	WebElement login = driver.findElement(By.name("login"));
+	btnclick();
+	
+}
+}

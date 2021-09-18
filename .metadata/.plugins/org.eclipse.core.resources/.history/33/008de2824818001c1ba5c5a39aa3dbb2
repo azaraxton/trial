@@ -1,0 +1,9 @@
+package org.test;
+
+public class StudentDetails extends StudentInter{
+	
+	public static void main(String[] args) {
+		StudentDetails sd
+	}
+
+}
